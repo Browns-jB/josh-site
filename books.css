@@ -1,3 +1,16 @@
-p {
-    text-align: center;
-  }
+.books {
+    border-width: 2px;
+    margin: 0px;
+    padding: 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+.books__image {
+    max-width: 100%;
+    display: block;
+}
+.col-50 {
+    width: 100%;
+}

@@ -23,4 +23,11 @@ body {
 }
 .navigation__link {
     text-decoration: none;
+    color: black;
+}
+.navigation__link:visited {
+    color: black;
+}
+.padding {
+    padding: 20px;
 }
