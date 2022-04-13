@@ -4,28 +4,35 @@
     --colorDefault: #000000;
     --colorInverted: #ffffff;
     --colorTitle: #F2682C;  
-    --spacingXl: 130px;
+    --spacingXl: 150px;
+    --spacingMd: 80px;
     --spacingSm: 20px;
     --fontXl: 50px;
-    --fontSizeXl: 20px;
-    
-}
+    --fontSizeMd: 20px;
+    --fontSizeLg: 40px;
+    --headerHeight: 80px;
 
+}
+* {
+    box-sizing: border-box;
+} 
 body {
  margin: 0;
- font-family: 'Open Sans', sans-serif;
+ /*font-family: 'Open Sans', sans-serif;*/   
+ font-family: Helvetica, sans-serif;
 }
 /* HEADER */
 .header {
     background: white;
-    padding: 40px;
+    padding-inline: var(--spacingSm);
+    height: var(--headerHeight);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .header__logo {
     color: black;
-    font-size: 20px;
+    font-size: var(--fontSizeMd);
     text-decoration: none;
 }
 /* navigation */
@@ -45,7 +52,7 @@ body {
     display: flex;
     grid-gap: 20px;
     color: black;
-    font-size: 20px;
+    font-size: var(--fontSizeMd);
 }
 .navigation__link:visited {
     color: black;
@@ -56,6 +63,7 @@ body {
     padding: var(--spacingXl) var(--spacingSm);
     font-size: var(--fontXl);
     font-weight: 600;
+    height: calc(100vh - var(--headerHeight));
 
 }
 .hero__heading {
@@ -63,8 +71,43 @@ body {
 }
 .hero__subheading {
     color: var(--colorInverted);
+} 
+/* section */
+.section {
+    padding: var(--spacingSm);
+}
+.section--primary{
+    background: var(--colorPrimary);
+    color: var(--colorInverted);
+}
+.section--big {
+    padding-block: var(--spacingMd);
+}
+
+.section__heading {
+    font-size: var(--fontSizeLg);
+    font-weight: normal;
 
 }
+.section__footer {
+    font-size: var(--fontSizeSm);
+}
+
+/* button */
+.button {
+    display: inline-flex;
+    background: var(--colorSecondary);
+    color: var(--colorPrimary);
+    padding: 20px 60px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    gap: var(--spacingSm); /* Make sure the variable is defined within :root */
+  }
+
 /* other */
 .padding {
     padding: 20px;
