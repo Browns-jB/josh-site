@@ -1,4 +1,29 @@
-.images-bio {
-    width: 200px;
-    height: 200px;
+.hero--about__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: var(--spacingSm);
+}
+.hero--about__image {
+    max-width: 100%;
+    clip-path: circle(40%);
+}
+.hero--about__content {
+    display: grid; 
+    align-content: center;
+    grid-gap: var(--spacingSm);
+}
+.features {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-gap: var(--spacingSm) var(--spacingMd);
+    color: var(--colorInverted);
+
+}
+.features__item {
+    font-size: var(--fontSizeLg);
+    font-weight: 400;
+}
+.features__item::marker {
+    color: var(--colorSecondary);
 }

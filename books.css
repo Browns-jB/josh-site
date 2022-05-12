@@ -10,6 +10,7 @@
 .books__image {
     max-width: 100%;
     display: block;
+    clip-path: circle(50%);
 }
 .col-50 {
     width: 100%;
