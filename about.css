@@ -27,3 +27,7 @@
 .features__item::marker {
     color: var(--colorSecondary);
 }
+.section__subheading {
+    font-size: var(--fontSizeMd);
+    font-weight: normal;
+}
